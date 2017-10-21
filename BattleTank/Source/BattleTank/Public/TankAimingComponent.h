@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Components/ActorComponent.h"
+#include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
 #include "TankAimingComponent.generated.h"
 
 
@@ -14,7 +15,7 @@ class BATTLETANK_API UTankAimingComponent : public UActorComponent
 
 public:	
 	// Sets default values for this component's properties
-	void AimAt(FVector WorldSpaceAim);
+	void AimAt(FVector WorldSpaceAim, float launchSpeed);
 	 UTankAimingComponent();
 	 void SetBarrelReference(UStaticMeshComponent* BarrelToSet);
 
